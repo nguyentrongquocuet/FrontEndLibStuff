@@ -6,12 +6,12 @@
  * @description How it works:
  * There are 3 things you should care about:
  * - S: input type
- *   + if not a object(undefined, null, array, whatever), immediately finish the chain, because we can't access deeper
+ *   + if not a object(undefined, null, array, whatever), immediately finish the chain, because we can't go further
  *   + else: will be used for accessing its children
  * +++++++++++++++++++++++++++++++++++++++++++++++++++++
  * - O: optional frag
  *   + if true, S and its children of S will be considered as optional properties
- *   + t makes sense because teaful allows creating property of optional property on the fly
+ *   + it makes sense because teaful allows creating property of optional property on the fly
  * +++++++++++++++++++++++++++++++++++++++++++++++++++++
  * - OG: original type of S, might be undefined
  *   + if we call the expression, OG will be returned
